@@ -112,7 +112,7 @@ export default function FontTester() {
         if ("queryLocalFonts" in window) {
           // @ts-expect-error — Local Font Access API not in all TS defs
           const fonts = await window.queryLocalFonts();
-          const uniqueFamilies = [...new Set(fonts.map((f: { family: string }) => f.family))] as string[];
+          const uniqueFamilies = Array.from(new Set<string>(fonts.map((f: { family: string }) => f.family)));
           setLocalApiFonts(uniqueFamilies.sort());
         }
       } catch {
