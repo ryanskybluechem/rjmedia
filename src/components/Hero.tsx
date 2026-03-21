@@ -83,7 +83,7 @@ export default function Hero() {
         >
           15 years of web design, marketing strategy, and creative direction.
           <span className="text-[#F5F5F5]"> Millions generated.</span>
-          <span className="text-[#39FF14]"> Zero shortcuts.</span>
+          <span className="text-[#39FF14]"> Only shortcuts.</span>
         </motion.p>
 
         {/* CTA row */}
